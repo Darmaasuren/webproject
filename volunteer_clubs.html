@@ -3,100 +3,101 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Volunteer work</title> 
+        <title>Volunteer Clubs</title> 
+        <link rel="stylesheet" href="css/volunteerclubs.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
-            <nav>
-                <h1 class="logo">Volunteer work</h1>
-                <a class="mainitem" href="main.html">Нүүр хуудас</a>
-                <a class="mainitem" href="volunteerworks.html">Сайн дурын ажил</a>
-                <a class="mainitem" href="volunteer_clubs.html">Сайн дурын клубууд</a>
-                <a class="signin" href="signin.html">Нэвтрэх</a>
-            </nav>
+            <div class="menu-item">
+                <h1 class="logo">Volunteer <span class="logo-primary">work</span></h1>
+                <ul>
+                    <li><a href="main.html">Нүүр хуудас</a></li>
+                    <li><a href="volunteerworks.html">Сайн дурын ажил</a></li>
+                    <li><a id="current" href="volunteer_clubs.html">Сайн дурын клубууд</a></li>
+                    <li><button class="login-button"><a href="signin.html"><span id="login-a">Нэвтрэх</span></a></button></li>
+                </ul>
+            </div>
         </header>
-        <h2>Сайн дурын клуб болон байгууллагууд</h2>
-        <form>
-            <label>Хайх</label>
-            <input type="search" placeholder="Хайх">
-        </form>
-        <article class="clubs">
-            <section>
-                <img src="pictures/mongoliinhuuhdiinzuwlul.jpg" width="30" height="30">
-                <a href="#">Монголын хүүхдийн зөвлөл</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
+        <section class="top-search">
+            <div class="topic"><h2>Сайн дурын клуб болон байгууллагууд</h2></div>
+            <div  class="search">
+                <form>
+                <input class="search" type="search" placeholder= "Хайх" >
+                </form>
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </section>
+        <article class="Clubs">
+            <section class="left-clubs">
+                <section class="club">
+                    <a href="#"><img src="pictures/mongoliinhuuhdiinzuwlul.jpg" width="30" height="30">Монголын хүүхдийн зөвлөл</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club"> 
+                    <a href="#"> <img src="pictures/mongoliinscautiinholboo.jpg" width="30" height="30"> Монголын Скаутын Холбоо</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section  class="club">
+                    <a href="#"><img src="pictures/uswuriinparlament.png" width="30" height="30">Өсвөрийн Парламент</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club">
+                    <a href="#"><img src="pictures/youcan.jpg" width="30" height="30">Youccan / Цэвэр агаарын төлөөх хүүхэд, залуучуудын сүлжээ</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club">
+                    <a href="#"><img src="pictures/UNYAP.jpg" width="30" height="30">НҮБ-ын Залуучуудын Зөвлөх Хороо (UNYAP)</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
             </section>
-            <section>
-                <img src="pictures/mongoliinscautiinholboo.jpg" width="30" height="30">
-                <a href="#">Монголын Скаутын Холбоо</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/uswuriinparlament.png" width="30" height="30">
-                <a href="#">Өсвөрийн Парламент</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/youcan.jpg" width="30" height="30">
-                <a href="#">Youccan / Цэвэр агаарын төлөөх хүүхэд, залуучуудын сүлжээ</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/UNYAP.jpg" width="30" height="30">
-                <a href="#">НҮБ-ын Залуучуудын Зөвлөх Хороо (UNYAP)</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/huurhunzurh.png" width="30" height="30">
-                <a href="#">Хөөрхөн зүрх</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/zaluchuudhugjiliintuw].png" width="30" height="30">
-                <a href="#">Залуучууд Хөгжлийн Төв</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/mongoliinulaanzagalmai.png" width="30" height="30">
-                <a href="#">Монголын улаан загалмай нийгэмлэг</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/mongoliinsainduriinhniituw.png.png" width="30" height="30">
-                <a href="#">Монголын сайн дурынхны төв</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/tergentserteiirgediinholboo.png" width="30" height="30">
-                <a href="#">Монголын Тэргэнцэртэй Иргэдийн Үндэсний Холбоо</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
+            <section class="right-clubs">
+                <section class="club">
+                    <a href="#"><img src="pictures/huurhunzurh.png" width="30" height="30">Хөөрхөн зүрх</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section  class="club">
+                    <a href="#"> <img src="pictures/zaluchuudhugjiliintuw].png" width="30" height="30">Залуучууд Хөгжлийн Төв</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club">
+
+                    <a href="clubabout.html"><img src="pictures/mongoliinulaanzagalmai.png" width="30" height="30">Монголын улаан загалмай нийгэмлэг</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club">
+                    <a href="#"><img src="pictures/mongoliinsainduriinhniituw.png" width="30" height="30">Монголын сайн дурынхны төв</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
+                <section class="club">
+                    <a href="#"><img src="pictures/tergentserteiirgediinholboo.png" width="30" height="30">Монголын Тэргэнцэртэй Иргэдийн Үндэсний Холбоо</a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-solid fa-briefcase"></i>Нийт ажил 20</a>
+                </section>
             </section>
         </article>
         <footer>
-            <a href="volunteerworks.html">Сайн дурын ажил</a>
-            <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
-            <a href="contact.html">Санал хүсэлт</a>
+            <div class="foot">
+                <div class="foot-link">
+                    <a href="volunteerworks.html">Сайн дурын ажил</a>
+                    <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
+                    <a href="contact.html">Санал хүсэлт</a>
+                </div>
+                <div class="foot-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
