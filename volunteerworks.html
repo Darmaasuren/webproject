@@ -3,31 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Volunteer Clubs</title> 
+        <link rel="stylesheet" href="css/volunteerworks.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="work.css">
-        <title>Volunteer work</title> 
-    </head>     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
     <body>
         <header>
-            <nav>
-                <h1 class="logo">Volunteer work</h1>
-                <a class="mainitem" href="main.html">Нүүр хуудас</a>
-                <a class="mainitem" href="volunteerworks.html">Сайн дурын ажил</a>
-                <a class="mainitem" href="volunteer_clubs.html">Сайн дурын клубууд</a>
-                <a class="signin" href="signin.html">Нэвтрэх</a>
-            </nav>
+            <div class="menu-item">
+                <h1 class="logo">Volunteer <span class="logo-primary">work</span></h1>
+                <ul>
+                    <li><a href="main.html">Нүүр хуудас</a></li>
+                    <li><a id="current" href="volunteerworks.html">Сайн дурын ажил</a></li>
+                    <li><a href="volunteer_clubs.html">Сайн дурын клубууд</a></li>
+                    <li><button class="login-button"><a href="signin.html"><span id="login-a">Нэвтрэх</span></a></button></li>
+                </ul>
+            </div>
         </header>
-        <h2>Сайн дурын ажлууд</h2>
-        <form>
-            <label>Хайх</label>
-            <input type="search" placeholder="Хайх">
-        </form>
-        <section>
-            <div>
-                <nav class="select">
-                    <h3>Ангилал</h3>
-                    <i class="material-icons">keyboard_arrow_right</i>
+        <section class="top-search">
+            <div class="topic"><h2>Сайн дурын ажлууд</h2></div>
+            <div  class="search">
+                <form>
+                <input class="search" type="search" placeholder= "Хайх" >
+                </form>
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </section>
+        <article class="Works">
+            <section class="select">
+                <nav class="selector">
+                    <h3>Ангилал <i class="material-icons">keyboard_arrow_right</i></h3>
                 </nav>
                 <nav class="choice">
                     <ul>
@@ -38,43 +43,48 @@
                         <li><a href="#">Амьтан</a></li>
                         <li><a href="#">Байгаль орчин</a></li>
                     </ul> 
-                </div>
                 </nav>
-        </section>
-        <aritcle class="clubs">
-            <section>
-                <img src="pictures/huurhunzurh.png" width="30" height="30">
-                <a href="#">Хөөрхөн зүрх</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
             </section>
-            <section>s
-                <img src="pictures/zaluchuudhugjiliintuw].png" width="30" height="30">
-                <a href="#">Залуучууд Хөгжлийн Төв</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
+            <section class="clubs">
+                <section class="club">
+                    <a href="#"><img src="pictures/huurhunzurh.png" width="30" height="30"> <span id="work-name">ЗОРИЛТОТ 1259 ӨРХИЙГ ХАЛАМЖААС ХӨДӨЛМӨРТ ШИЛЖҮҮЛЭВ <span id="club-name">Хөөрхөн зүрх</span> </span></a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-regular fa-clock"></i>2025-05-15</a>
+                </section>
+                <section  class="club">
+                    <a href="#"> <img src="pictures/zaluchuudhugjiliintuw].png" width="30" height="30"> <span id="work-name">ЗОРИЛТОТ 1259 ӨРХИЙГ ХАЛАМЖААС ХӨДӨЛМӨРТ ШИЛЖҮҮЛЭВ <span id="club-name">Залуучууд Хөгжлийн Төв</span> </span></a>
+                    <hr>
+                    <a id="allwork" href="#"> <i class="fa-regular fa-clock"></i>2025-05-15</a>
+                </section>
+                <section class="club">
+                    <a href="clubabout.html"><img src="pictures/mongoliinulaanzagalmai.png" width="30" height="30"> <span id="work-name">ЗОРИЛТОТ 1259 ӨРХИЙГ ХАЛАМЖААС ХӨДӨЛМӨРТ ШИЛЖҮҮЛЭВ <span id="club-name">Монголын улаан загалмай нийгэмлэг</span> </span></a>
+                    <hr>
+                    <a id="allwork" href="#"> <i class="fa-regular fa-clock"></i>2025-05-15</a>
+                </section>
+                <section class="club">
+                    <a href="#"><img src="pictures/mongoliinsainduriinhniituw.png" width="30" height="30"> <span id="work-name">ЗОРИЛТОТ 1259 ӨРХИЙГ ХАЛАМЖААС ХӨДӨЛМӨРТ ШИЛЖҮҮЛЭВ <span id="club-name">Монголын сайн дурынхны төв</span> </span></a>
+                    <hr>
+                    <a id="allwork" href="#"><i class="fa-regular fa-clock"></i>2025-05-15</a>
+                </section> 
+                <section class="club">
+                    <a href="#"><img src="pictures/tergentserteiirgediinholboo.png" width="30" height="30"> <span id="work-name">ЗОРИЛТОТ 1259 ӨРХИЙГ ХАЛАМЖААС ХӨДӨЛМӨРТ ШИЛЖҮҮЛЭВ <span id="club-name">Монголын Тэргэнцэртэй Иргэдийн Үндэсний Холбоо</span> </span></a>
+                    <hr>
+                    <a id="allwork" href="#"> <i class="fa-regular fa-clock"></i>2025-05-15</a>
+                </section>
             </section>
-            <section>
-                <img src="pictures/mongoliinulaanzagalmai.png" width="30" height="30">
-                <a href="#">Монголын улаан загалмай нийгэмлэг</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-            <section>
-                <img src="pictures/mongoliinsainduriinhniituw.png" width="30" height="30">
-                <a href="#">Монголын сайн дурынхны төв</a>
-                <hr>
-                <i class="fa fa-shopping-bag"></i>
-                <a href="#">Нийт ажил</a>
-            </section>
-        </aritcle>
+        </article>
         <footer>
-            <a href="volunteerworks.html">Сайн дурын ажил</a>
-            <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
-            <a href="contact.html">Санал хүсэлт</a>
+            <div class="foot">
+                <div class="foot-link">
+                    <a href="volunteerworks.html">Сайн дурын ажил</a>
+                    <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
+                    <a href="contact.html">Санал хүсэлт</a>
+                </div>
+                <div class="foot-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
