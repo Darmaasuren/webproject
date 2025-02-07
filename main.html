@@ -3,54 +3,77 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Volunteer work</title> 
+        <title>Volunteer Clubs</title> 
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
-            <nav>
-                <h1 class="logo">Volunteer work</h1>
-                <a class="mainitem" href="main.html">Нүүр хуудас</a>
-                <a class="mainitem" href="volunteerworks.html">Сайн дурын ажил</a>
-                <a class="mainitem" href="volunteer_clubs.html">Сайн дурын клубууд</a>
-                <a class="signin" href="signin.html">Нэвтрэх</a>
-            </nav>
+            <div class="menu-item">
+                <h1 class="logo">Volunteer <span class="logo-primary">work</span></h1>
+                <ul>
+                    <li><a id="current" href="main.html">Нүүр хуудас</a></li>
+                    <li><a href="volunteerworks.html">Сайн дурын ажил</a></li>
+                    <li><a href="volunteer_clubs.html">Сайн дурын клубууд</a></li>
+                    <li><button class="login-button"><a href="signin.html"><span id="login-a">Нэвтрэх</span></a></button></li>
+                </ul>
+            </div>
         </header>
-        <section>
-            <img src="pictures/ger_pic.jpg">
-        </section>
 
-        <section>
-            <h2>Тоон үзүүлэлт</h2>
-            <nav class="count">
-                <p>Нийт хэрэглэгч</p>
-                <h5>2000</h5>
-            </nav>
-            <nav class="count">
-                <p>Сайн дурын ажлууд</p>
-                <h5>450</h5>
-            </nav>
-            <nav class="count">
-                <p>Сайн дурын клубууд</p>
-                <h5>150</h5>
-            </nav>
+            <img src="pictures/7.jpg" width="100%">
+            
+        <section class="count-statistic">
+            <h1>Тоон үзүүлэлт</h1>
+            <div class="counts">
+                <div class="count">
+                    <i class="fa-solid fa-user"></i>
+                    <nav class="stat-text">
+                        <p>Нийт хэрэглэгч</p>
+                        <h5>2000</h5>
+                    </nav>
+                </div>
+                <div class="count">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <nav class="stat-text">
+                        <p>Сайн дурын ажлууд</p>
+                        <h5>450</h5>
+                    </nav>
+                </div>
+                <div class="count">
+                    <i class="fa fa-home"></i>
+                    <nav class="stat-text">
+                        <p>Сайн дурын клубууд</p>
+                        <h5>150</h5>
+                    </nav>
+                </div>
+            </div>
         </section>
         <section class="task">
-            <div>
-                <h1>Сайн дурын ажил гэж юу вэ?</h1>
+            <div class="description">
+                <h1><span id="primary-text">Сайн дурын ажил</span> гэж юу вэ?</h1>
                 <p>НҮБ-с "Сайн дурын ажил" нь дэлхийн бүх улс орны нийгэмд оршиж буй нийгмийн чадавх, уян хатан байдлыг бэхжүүлэх үндсэн эх үүсвэр хэмээн томьёолсон.
 
                     НҮБ-н Ерөнхий Ассамблей “Сайн дурын ажил”-г иргэд өөрийн хүсэлтээр, олон нийтийн ашиг тусын тулд мөнгөн орлогыг тулгуур хүчин зүйл гэж үзэхгүй нийгэмд хүчин зүтгэх нэгэн хэлбэр.
                     Сайн дурын ажлын үнэт зүйлс нь хүнлэг хандлага, хамтын ажиллагаа, эв нэгдэл гэж тодорхойлсон байдаг.
                 </p>
             </div>
-            <div>
-                <img src="pictures/mod_pic.jpeg">
+            <div class="description-img">
+                <img src="pictures/mod.jpg" width="100%">
             </div>
         </section>
         <footer>
-            <a href="volunteerworks.html">Сайн дурын ажил</a>
-            <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
-            <a href="contact.html">Санал хүсэлт</a>
+            <div class="foot">
+                <div class="foot-link">
+                    <a href="volunteerworks.html">Сайн дурын ажил</a>
+                    <a href="volunteer_clubs.html">Сайн дурын клубууд</a>
+                    <a href="contact.html">Санал хүсэлт</a>
+                </div>
+                <div class="foot-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
